@@ -17,8 +17,9 @@ let GameManager = {
       case "Trunks":
         player = new Player(character, 200, 0, 200, 100, 50);
         break;
-      default:
     }
+    let getInterface = document.querySelector(".interface");
+    getInterface.innerHTML = "<img src='' ++ ''>";
   },
   setPreFight: function(){
 
