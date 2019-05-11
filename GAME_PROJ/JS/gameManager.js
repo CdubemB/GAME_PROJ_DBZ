@@ -19,7 +19,7 @@ let GameManager = {
         break;
     }
     let getInterface = document.querySelector(".interface");
-    getInterface.innerHTML = "<img src='Assets/' + character + '.jpg' class='img-avatar'><div><h3>'+ character +'</h3><p>HEALTH:  '+ player.health +' </p></div>";
+    getInterface.innerHTML = "<img src='Assets/" + character + ".jpg' class='img-avatar'><div><h3>"+ character +"</h3><p>HEALTH:  "+ player.health + " </p></div>";
   },
   setPreFight: function(){
 
