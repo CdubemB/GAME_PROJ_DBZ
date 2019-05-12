@@ -23,7 +23,23 @@ let GameManager = {
   },
   setPreFight: function(){
 
-    let getHeader;
+    let getHeader = document.querySelector(".header");
+    let getActions = document.querySelector(".actions");
+    let getArena = document.querySelector(".arena");
+    //Collecting content from HTML
+    getHeader.innerHTML = '<p>Task: Find an enemy!</p>';
+    getActions.innerHTML = '<a href="#" class="btn-prefight" onclick="GameManager.setFight()">Search for enemy!</a>';
+    getArena.style.visibility = "visible";
+    //Adding text to these content and making them visible
+  },
+  setFight: function() {
+    let getHeader = document.querySelector(".header");
+    let getActions = document.querySelector(".actions");
+    let getEnemy = document.querySelector(".enemy");
+    // Create enemy!
+
+    let enemy00 = new Enemy("saibamen");
+
 
   }
 }
