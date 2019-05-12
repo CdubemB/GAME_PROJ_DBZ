@@ -1,7 +1,7 @@
 let enemy;
 
-function Enemy(Enemy, health, ki, strength, agility, speed){
-  this.Enemy = Enemy;
+function Enemy(enemyType, health, ki, strength, agility, speed){
+  this.enemyType = enemyType;
   this.health = health;
   this.ki = ki;
   this.strength = strength;
