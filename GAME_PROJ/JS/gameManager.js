@@ -38,8 +38,11 @@ let GameManager = {
     let getEnemy = document.querySelector(".enemy");
     // Create enemy!
 
-    let enemy00 = new Enemy("saibamen");
+    let enemy00 = new Enemy("saibamen", "100", "0", "50", "100", "100");
+    let enemy01 = new Enemy("grunt", "200", "0", "150", "80", "150");
 
-
+    let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(2));
+    console.log(chooseRandomEnemy);
+    
   }
 }
