@@ -42,7 +42,17 @@ let GameManager = {
     let enemy01 = new Enemy("grunt", "200", "0", "150", "80", "150");
 
     let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(2));
-    console.log(chooseRandomEnemy);
-    
-  }
+    switch (chooseRandomEnemy){
+      case 0:
+        enemy = enemy00;
+        break;
+      case 1:
+        enemy = enemy01;
+        break;
+    }
+   getHeader.innerHTML = '<p>Task: choose your move </p>';
+   getActions.innerHTML = '<a href="#" class="btn-prefight" onclick="PlayerMoves.calcAttack()"> Attack!</a>';
+   getEnemy.innerHTML = '<img src="Assets/'+  Enemy.enemyType.toLowerCase() + '.jpg" alt=" '+ Enemy.enemyType +'" class="img-avatar"><div><h3>' + Enemy.enemyType +  ' </h3><p class="health-enemy">Health: ' + enemy.health + '</p> <p class="ki-enemy">Ki: ' + enemy.ki + '</p><p class="strength-enemy">Strength: ' + enemy.strength + '</p><p class="agility-enemy">Agility: ' + enemy.agility + '</p><p class="health-enemy">Speed: ' + enemy.speed + ' </p></div> ';
+  } 
 }
+ 
